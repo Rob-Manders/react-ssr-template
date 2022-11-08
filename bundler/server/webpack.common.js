@@ -2,7 +2,7 @@ const path = require('path')
 const nodeExternals = require('webpack-node-externals')
 
 module.exports = {
-  entry: './client/index.tsx',
+  entry: './server/src/server.tsx',
   module: {
     rules: [
       {
@@ -30,8 +30,8 @@ module.exports = {
   },
   output: {
     filename: 'server.js',
-    path: path.resolve(__dirname, '../build'),
-    clean: true
+    path: path.resolve(__dirname, '../../build'),
+    publicPath: ''
   },
   node: {
     __dirname: false,
