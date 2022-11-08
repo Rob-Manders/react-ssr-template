@@ -1,7 +1,7 @@
 {
   "name": "react-ts-template",
   "version": "1.0.0",
-  "description": "A template for building static React apps in Typescript.",
+  "description": "A template for building server side rendered React apps.",
   "private": true,
   "scripts": {
     "start": "webpack serve --config ./bundler/client/webpack.dev.js",
